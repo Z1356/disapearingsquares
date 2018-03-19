@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dissapearing Images</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('img').click(function(){
+          $(this).fadeOut()
+        });
+        $('button').click(function(){
+          $('img').fadeIn()
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>jQuery - assignment 1</h2>
+    <img src="http://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" alt="square">
+    <img src="http://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" alt="square">
+    <img src="http://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" alt="square">
+    <img src="http://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" alt="square">
+    <img src="http://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" alt="square">
+    <img src="http://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" alt="square">
+    <img src="http://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" alt="square">
+    <img src="http://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" alt="square">
+    <button type="button">Restore</button>
+  </body>
+</html>
